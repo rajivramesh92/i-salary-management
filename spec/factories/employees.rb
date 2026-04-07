@@ -1,11 +1,12 @@
 FactoryBot.define do
   factory :employee do
-    full_name { "MyString" }
-    job_title { "MyString" }
-    country { "MyString" }
-    department { "MyString" }
-    salary { "9.99" }
-    hire_date { "2026-04-07" }
-    employment_status { "MyString" }
+    sequence(:full_name) { |n| "Employee #{n}" }
+    job_title { "Software Engineer" }
+    country { "India" }
+    department { "Engineering" }
+    salary { 90000 }
+    sequence(:email) { |n| "employee#{n}@example.com" }
+    employment_type { "Full-time" }
+    date_of_joining { Date.new(2023, 1, 1) }
   end
 end

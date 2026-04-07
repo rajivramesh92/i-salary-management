@@ -2,7 +2,8 @@ require "rails_helper"
 
 RSpec.describe "Api::V1::Employees", type: :request do
   let!(:employee1) do
-    Employee.create!(
+     FactoryBot.create(
+      :employee,
       full_name: "Vikas Sharma",
       job_title: "Software Engineer",
       country: "India",
@@ -15,7 +16,8 @@ RSpec.describe "Api::V1::Employees", type: :request do
   end
 
   let!(:employee2) do
-    Employee.create!(
+     FactoryBot.create(
+      :employee,
       full_name: "John Smith",
       job_title: "Product Manager",
       country: "USA",
@@ -28,7 +30,8 @@ RSpec.describe "Api::V1::Employees", type: :request do
   end
 
   let!(:employee3) do
-    Employee.create!(
+     FactoryBot.create(
+      :employee,
       full_name: "Priya Patel",
       job_title: "Software Engineer",
       country: "India",
