@@ -49,6 +49,7 @@ class SalaryInsightsService
         average_salary: employees.average(:salary).to_f.round(2)
       }
     end
+    
 
     private
 
