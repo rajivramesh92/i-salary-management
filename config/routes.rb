@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  match '*path', to: proc { [200, {}, ['OK']] }, via: :options
   namespace :api do
     namespace :v1 do
       resources :employees, only: [:index, :show, :create, :update, :destroy]
