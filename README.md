@@ -1,24 +1,111 @@
-# README
+# 💼 Salary Management System - Backend (Rails API)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 🚀 Overview
 
-Things you may want to cover:
+This is the backend service for the Salary Management System. It provides RESTful APIs to manage employee records and generate salary insights for an organization with 10,000+ employees.
 
-* Ruby version
+---
 
-* System dependencies
+## 🛠️ Tech Stack
 
-* Configuration
+* Ruby on Rails (API mode)
+* PostgreSQL
+* RSpec (Testing)
+* Render (Deployment)
 
-* Database creation
+---
 
-* Database initialization
+## ⚙️ Features
 
-* How to run the test suite
+### 👨‍💼 Employee Management
 
-* Services (job queues, cache servers, search engines, etc.)
+* Create Employee
+* View Employees
+* Update Employee
+* Delete Employee
 
-* Deployment instructions
+### 📊 Salary Insights
 
-* ...
+* Average Salary by Country
+* Average Salary by Job Title
+* Highest & Lowest Salary
+* Department-wise Salary Analysis
+
+---
+
+## 📦 API Endpoints
+
+### Employees
+
+```
+GET    /api/v1/employees
+POST   /api/v1/employees
+GET    /api/v1/employees/:id
+PUT    /api/v1/employees/:id
+DELETE /api/v1/employees/:id
+```
+
+### Insights
+
+```
+GET /api/v1/insights
+```
+
+---
+
+## 🌱 Seed Data (10,000 Employees)
+
+* Generated using first_names.txt & last_names.txt
+* Optimized for performance
+* Ensures realistic dataset for testing
+
+---
+
+## 🧪 Testing
+
+* RSpec test cases implemented
+* Covers models, controllers, and core business logic
+
+Run tests:
+
+```bash
+bundle exec rspec
+```
+
+---
+
+## 🚀 Deployment
+
+* Hosted on Render
+* Live API: https://i-salary-management.onrender.com/api/v1/employees
+
+---
+
+## ⚡ Performance Considerations
+
+* Pagination-ready APIs
+* Efficient DB queries
+* Optimized seed script for large datasets
+
+---
+
+## 🧠 Engineering Decisions
+
+* Used Rails API mode for clean separation of concerns
+* Structured controllers and services for maintainability
+* Focused on scalability (10k+ records handling)
+
+---
+
+## 📌 Future Improvements
+
+* Authentication (JWT)
+* Caching (Redis)
+* Background jobs (Sidekiq)
+* Advanced filtering & search
+
+---
+
+## 👨‍💻 Author
+
+Rajiv Chaurasia
